@@ -1,0 +1,25 @@
+html {
+  font-family: 'Helvetica Neue', arial, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  font-weight: 100;
+  color: #625f5d;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  background: #efefef;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+p {
+  text-align: left;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+}
