@@ -62,14 +62,10 @@ app.configure(function() {
 
 app.post('/oauth2/token', function(req, res) {
   var username = req.body.username
-    , password = req.body.password
-    , clientId = req.body.client_id
-    , clientSecret = req.body.client_secret;
+    , password = req.body.password;
 
   if(isEmpty(username)
-  || isEmpty(password)
-  || isEmpty(clientId)
-  || isEmpty(clientSecret)) {
+  || isEmpty(password)) {
     return res.json(400, { error : 'invalid_request'})
   }
 
@@ -77,41 +73,19 @@ app.post('/oauth2/token', function(req, res) {
     .select('*')
     .from(userTable)
     .where(
-      userTable.username.equals(req.body.username)
+      userTable.name.equals(req.body.username)
     ).and(
-      userTable.password.equals(req.body.password)
+      userTable.pw.equals(req.body.password)
     ).toQuery();
-
-  var q2 = clientTable
-    .select('*')
-    .from(clientTable)
-    .where(
-      clientTable.client_id.equals(req.body.client_id)
-    ).and(
-      clientTable.client_secret.equals(req.body.client_secret)
-    ).toQuery();
-
 
   function callback(err, clients, users) {
    // console.log(err,clients,users);
     if(!err) {
-      if(clients.length === 0) {
-        return res.json(401, { error : 'invalid_client' });
-      }
       if(users.length === 0) {
         return res.json(401, { error : 'access_denied' });
       }
-
       else {
         var user = new User(username, password, clientId);
-        var token = user.updateToken(function(err, tokens) {
-          if(!err) {
-            res.json(tokens);
-          }
-          else {
-            throw err;
-          }
-        });
       }
     }
   };
