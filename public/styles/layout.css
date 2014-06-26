@@ -1,8 +1,8 @@
 .container {
   height: 100%;
   width: 800px;
-  border-left: white solid 1px;
-  border-right: white solid 1px;
+/*  border-left: white solid 1px;
+  border-right: white solid 1px;*/
   margin: 0 auto;
 }
 
@@ -28,7 +28,24 @@
   background-color: white;
   height: 200px;
   width: 200px;
-  margin: 60px 33px;
+  margin: 90px 33px;
   overflow: hidden;
   float: left;
+}
+
+@media(max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  .entry {
+    margin: 60px auto;
+    float: none;
+  }
+}
+
+.footer {
+  overflow: hidden;
+  background-color: white;
+  color: #efefef;
+  padding: 40px 20px;
 }
