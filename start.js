@@ -23,13 +23,16 @@ requirejs.config({
 //   , todos = require('./models/todos')
 //   , todo = require('./models/todo');
 var books = require('./models/books');
-var html = ('./public/books.html');
+var tpml = requirejs('./public/templates/tmpl');
 
 app.get('/books', function(req, res) {
   books.get(function(err, list) {
     if(!err) {
       // console.log(list);
-      res.send(html);
+      res.send(tmpl.html({
+        header : tmpl.header(),
+        container : tmpl.container()
+      }));
     }
     else
       res.send('nothing');

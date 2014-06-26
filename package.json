@@ -20,7 +20,10 @@
     "express": "~3.4.8",
     "sql": "~0.39.0",
     "mysql": "~2.3.2",
-    "request": "~2.36.0"
+    "request": "~2.36.0",
+    "grunt-dot-compiler": "~0.5.12",
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1"
   },
   "devDependencies": {
     "requirejs": "~2.1.14"
