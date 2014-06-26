@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/JiayangZZZ/bookshelf",
   "dependencies": {
-    "express": "~4.4.4"
+    "express": "~3.4.8",
+    "sql": "~0.39.0",
+    "mysql": "~2.3.2",
+    "request": "~2.36.0"
   },
   "devDependencies": {
     "requirejs": "~2.1.14"
