@@ -3,13 +3,16 @@ function encodeHTMLSource() {  var encodeHTMLRules = { "&": "&#38;", "<": "&#60;
 String.prototype.encodeHTML=encodeHTMLSource();
 var tmpl = {};
   tmpl['container-book']=function anonymous(it) {
-var out='<table class="two-column"><tr><td class="column-nerrow"><img src="/public/images/logo.png"></td><td class="column-wide"><div class="books-promo"><p class="promo-title">'+(book.name)+'</p><p class="promo-description">'+(book.introduction)+'</p></div></td></tr></table>';return out;
+var out='<table class="two-column"><tr><td class="column-nerrow"><img src="/public/images/logo.png"></td><td class="column-wide"><div class="books-promo"><p class="promo-title">'+(it.name)+'</p><p class="promo-description">'+(it.introduction)+'</p></div></td></tr></table>';return out;
 };
   tmpl['container-books']=function anonymous(it) {
-var out='<table class="two-column">';var arr1=it.books;if(arr1){var book,index=-1,l1=arr1.length-1;while(index<l1){book=arr1[index+=1];out+='<tr><td class="column-nerrow"><img src="/public/images/logo.png"></td><td class="column-wide"><a href="http://localhost:3800/book/'+(book.id)+'"><div class="books-promo"><p class="promo-title">'+(book.name)+'</p><p class="promo-description">'+(book.introduction)+'</p></div></a></td></tr>';} } out+='</table>';return out;
+var out='<table class="two-column">';var arr1=it.books;if(arr1){var book,index=-1,l1=arr1.length-1;while(index<l1){book=arr1[index+=1];out+='<tr><td class="column-nerrow"><img src="/public/images/reading_pic2.jpg" height="120" width="120"></td><td class="column-wide"><a href="http://localhost:3800/book/'+(book.id)+'"><div class="books-promo"><p class="promo-title">'+(book.name)+'</p><p class="promo-description">'+(book.introduction)+'</p></div></a></td></tr>';} } out+='</table>';return out;
 };
   tmpl['container-index']=function anonymous(it) {
 var out='<div class="entry-wrapper"><a class="entry" href="http://localhost:3800/books"></a><a class="entry" href="http://localhost:3800/teams"></a><a class="entry" href="http://localhost:3800/setting"></a></div>';return out;
+};
+  tmpl['containerTeams']=function anonymous(it) {
+var out='<table class="two-column">';var arr1=it.teams;if(arr1){var team,index=-1,l1=arr1.length-1;while(index<l1){team=arr1[index+=1];out+='<tr><td class="column-nerrow"><img src="/public/images/reading_pic.jpg" height="120" width="120"></td><td class="column-wide"><div class="books-promo"><p class="promo-title">'+(team.title)+'</p><p class="promo-description">'+(team.description)+'</p></div></td></tr>';} } out+='</table>';return out;
 };
   tmpl['header']=function anonymous(it) {
 var out='<!--!header--><div class="header-container"><h1>BOOKSHELF</h1></div>';return out;

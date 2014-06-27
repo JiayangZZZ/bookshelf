@@ -8,7 +8,7 @@ container-books
 
 {{~it.books : book : index}}
   <tr>
-    <td class="column-nerrow"><img src="/public/images/logo.png"></td>
+    <td class="column-nerrow"><img src="/public/images/reading_pic2.jpg" height="120" width="120"></td>
     <td class="column-wide">
       <a href="http://localhost:3800/book/{{=book.id}}">
         <div class="books-promo">

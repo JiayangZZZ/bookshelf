@@ -18,7 +18,8 @@ requirejs.config({
 });
 
 var books = require('./models/books')
-  , book = require('./models/book');
+  , book = require('./models/book')
+  , teams = require('./models/teams');
 
 var tmpl = requirejs('./public/templates/tmpl');
 
@@ -48,7 +49,7 @@ app.get('/book/:id', function(req, res) {
     if(!err) {
       res.send(tmpl.html({
         header : tmpl.header(),
-        container : tmpl['container-book']()
+        container : "jlksdjf"
       }));
     }
     else
@@ -56,6 +57,18 @@ app.get('/book/:id', function(req, res) {
   })
 })
 
+app.get('/teams', function(req, res) {
+  teams.get(function(err, list) {
+    if(!err) {
+      res.send(tmpl.html({
+        header : tmpl.header(),
+        container : tmpl.containerTeams({ teams : list })
+      }));
+    }
+    else
+      res.send('error');
+  })
+})
 
 http.createServer(app).listen(app.get('port'), function() {
   console.log('Server started on port: ' + app.get('port'));

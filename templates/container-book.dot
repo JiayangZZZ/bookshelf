@@ -10,8 +10,8 @@ ditailes
     <td class="column-nerrow"><img src="/public/images/logo.png"></td>
     <td class="column-wide">
         <div class="books-promo">
-          <p class="promo-title">{{=book.name}}</p>
-          <p class="promo-description">{{=book.introduction}}</p>
+          <p class="promo-title">{{=it.name}}</p>
+          <p class="promo-description">{{=it.introduction}}</p>
         </div>
     </td>
   </tr>
