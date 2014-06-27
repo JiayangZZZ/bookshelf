@@ -17,11 +17,6 @@ requirejs.config({
   nodeRequire : require
 });
 
-// var tmpl = requirejs('./public/templates/tmpl');
-
-// var listItems = require('./models/listItems')
-//   , todos = require('./models/todos')
-//   , todo = require('./models/todo');
 var books = require('./models/books');
 var tpml = requirejs('./public/templates/tmpl');
 
@@ -35,7 +30,7 @@ app.get('/books', function(req, res) {
       }));
     }
     else
-      res.send('nothing');
+      res.send('error');
   })
 });
 

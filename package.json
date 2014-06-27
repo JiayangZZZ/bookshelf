@@ -23,7 +23,9 @@
     "request": "~2.36.0",
     "grunt-dot-compiler": "~0.5.12",
     "grunt": "~0.4.5",
-    "grunt-contrib-watch": "~0.6.1"
+    "grunt-contrib-watch": "~0.6.1",
+    "superagent": "~0.18.0",
+    "dot": "~1.0.2"
   },
   "devDependencies": {
     "requirejs": "~2.1.14"
