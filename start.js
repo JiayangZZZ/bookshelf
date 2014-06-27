@@ -17,8 +17,17 @@ requirejs.config({
   nodeRequire : require
 });
 
-var books = require('./models/books');
-var tpml = requirejs('./public/templates/tmpl');
+var books = require('./models/books')
+  , book = require('./models/book');
+
+var tmpl = requirejs('./public/templates/tmpl');
+
+app.get('/', function(req, res) {
+  res.send(tmpl.html({
+    header : tmpl.header(),
+    container : tmpl['container-index']()
+  }));
+})
 
 app.get('/books', function(req, res) {
   books.get(function(err, list) {
@@ -26,13 +35,26 @@ app.get('/books', function(req, res) {
       // console.log(list);
       res.send(tmpl.html({
         header : tmpl.header(),
-        container : tmpl.container()
+        container : tmpl['container-books']({ books : list })
       }));
     }
     else
       res.send('error');
   })
 });
+
+app.get('/book/:id', function(req, res) {
+  book.get(req.param('id'), function(err, book) {
+    if(!err) {
+      res.send(tmpl.html({
+        header : tmpl.header(),
+        container : tmpl['container-book']()
+      }));
+    }
+    else
+      res.send('error');
+  })
+})
 
 
 http.createServer(app).listen(app.get('port'), function() {

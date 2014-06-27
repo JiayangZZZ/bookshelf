@@ -43,6 +43,35 @@
   }
 }
 
+.column-nerrow {
+  margin: 0;
+  width: 30%;
+  padding: 20px;
+}
+
+.column-wide {
+  vertical-align: top;
+  margin: 20px 30px;
+  width: 70%;
+}
+
+.books-promo {
+  margin: 30px 20px;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.promo-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.promo-description {
+  font-size: 16px;
+}
+
+/*footer*/
 .footer {
   overflow: hidden;
   background-color: white;

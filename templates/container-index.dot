@@ -6,7 +6,7 @@ container-index
 !-->
 
 <div class="entry-wrapper">
-  <div class="entry"></div>
-  <div class="entry"></div>
-  <div class="entry"></div>
+  <a class="entry" href="http://localhost:3800/books"></a>
+  <a class="entry" href="http://localhost:3800/teams"></a>
+  <a class="entry" href="http://localhost:3800/setting"></a>
 </div>

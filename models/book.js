@@ -2,16 +2,17 @@
 var request = require('superagent');
 var origin = 'http://localhost:3700';
 
-function Books() {
+function Book() {
 }
 
-Books.prototype.get = function(callback) {
+Book.prototype.get = function(id, callback) {
   request
-    .get(origin + '/books')
+    .get(origin + '/book/' + id)
     .end(function(error, data) {
       console.log(data.body);
       callback(error, data.body);
     });
+    console.log('whats wrong');
 };
 
-module.exports = new Books();
+module.exports = new Book();
