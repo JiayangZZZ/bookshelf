@@ -1,0 +1,25 @@
+<div class="book-details">
+  <div class="book-cover"></div>
+  <div class="book-intro">
+    <p class="book-title">Science Fiction Discussion</p>
+    <p class="tag">funny</p>
+    <p class="book-description">A good team discussing funny things.</p>
+  </div>
+  <div class="button-blue">Follow</div>
+  <div class="message-wrapper">
+    <div class="message-content">What is your favourate fiction?</div>
+    <div class="message-user">Alice</div>
+  </div>
+  <div class="message-wrapper">
+    <div class="message-content">Harry Potter! of course!</div>
+    <div class="message-user">Brain</div>
+  </div>
+  <div class="message-wrapper">
+    <div class="message-content">Come on. Harry Potter is not a science fiction...</div>
+    <div class="message-user">Catherine</div>
+  </div>
+  <div class="message-wrapper">
+    <div class="message-content">LOL</div>
+    <div class="message-user">David</div>
+  </div>
+</div>

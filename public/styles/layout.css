@@ -9,7 +9,11 @@
 .header {
   padding: 50px 0;
   background-color: white;
-  font-size: 20px;
+  font-size: 40px;
+  font-weight: 800;
+  background: url(../images/group.jpg);
+  color: black;
+  background-size: 120%;
 }
 
 .header-container {
@@ -24,13 +28,37 @@
   text-align: center;
 }
 
-.entry {
-  background-color: white;
+.entry1 {
+  background-color: black;
   height: 200px;
   width: 200px;
   margin: 90px 33px;
   overflow: hidden;
   float: left;
+  background: url(../images/book.jpg);
+  background-size: 250px 250px;
+}
+
+.entry2 {
+  background-color: black;
+  height: 200px;
+  width: 200px;
+  margin: 90px 33px;
+  overflow: hidden;
+  float: left;
+  background: url(../images/group.jpg);
+  background-size: 250px 250px;
+}
+
+.entry3 {
+  background-color: black;
+  height: 200px;
+  width: 200px;
+  margin: 90px 33px;
+  overflow: hidden;
+  float: left;
+  background: url(../images/IMG_2590.JPG);
+  background-size: 200px 200px;
 }
 
 @media(max-width: 800px) {
@@ -71,6 +99,10 @@
   font-size: 16px;
 }
 
+.setting-wrapper {
+  padding: 40px 20px;
+}
+
 /*footer*/
 .footer {
   overflow: hidden;
@@ -78,3 +110,120 @@
   color: #efefef;
   padding: 40px 20px;
 }
+
+.book-details {
+  margin: 30px 30px;
+}
+
+.book-cover {
+  width: 500px;
+  height: 250px;
+  background: url(../images/reading_pic.jpg);
+  background-size: 100%;
+}
+
+.book-title {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 30px 10px;
+}
+
+.book-description {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 10px 10px;
+}
+
+.tag {
+  background-color: #ababab;
+  border-radius: 5px;
+  color: white;
+  margin: 20px 10px;
+  padding: 10px 15px;
+  width: 60px;
+}
+
+.button-blue {
+  font-size: 24px;
+  text-align: center;
+  background-color: #21afcc;
+  border-radius: 5px;
+  color: white;
+  margin: 40px 10px 30px 10px;
+  padding: 20px 25px;
+  width: 200px;
+}
+
+.button-red {
+  font-size: 24px;
+  text-align: center;
+  background-color: #e1574a;
+  border-radius: 5px;
+  color: white;
+  margin: 20px 10px 60px 10px;
+  padding: 20px 25px;
+  width: 200px;
+}
+
+.create {
+  float: right;
+  font-size: 24px;
+  text-align: center;
+  background-color: #21afcc;
+  border-radius: 5px;
+  color: white;
+  margin: 30px 10px 20px 30px;
+  padding: 10px 15px;
+  width: 200px;
+}
+
+.button-edit {
+  clear: both;
+  font-size: 20px;
+  text-align: center;
+  background-color: #21afcc;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 15px;
+  width: 120px;
+  float: right;
+}
+
+.message-wrapper {
+  background-color: white;
+  margin: 20px 10px;
+  padding: 20px 50px;
+}
+
+.message-content {
+  font-size: 20px;
+}
+
+.message-user {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ababab;
+}
+
+.first-column {
+  float: left;
+  width: 40%;
+}
+
+.second-column {
+  width: 60%;
+  float: left;
+}
+
+.setting-title {
+  font-size: 90px;
+  font-weight: 300;
+  padding: 30px 0 60px 0;
+}
+
+.setting-description {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+

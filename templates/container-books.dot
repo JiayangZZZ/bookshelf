@@ -4,13 +4,19 @@
 container-books
 
 !-->
+
+<a href="http://localhost:3800/create">
+  <div class="create">
+    Other good books?
+  </div>
+</a>
 <table class="two-column">
 
 {{~it.books : book : index}}
   <tr>
     <td class="column-nerrow"><img src="/public/images/reading_pic2.jpg" height="120" width="120"></td>
     <td class="column-wide">
-      <a href="http://localhost:3800/book/{{=book.id}}">
+      <a href="http://localhost:3800/book/2">
         <div class="books-promo">
           <p class="promo-title">{{=book.name}}</p>
           <p class="promo-description">{{=book.introduction}}</p>

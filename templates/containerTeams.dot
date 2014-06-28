@@ -10,7 +10,7 @@ container-teams
   <tr>
     <td class="column-nerrow"><img src="/public/images/reading_pic.jpg" height="120" width="120"></td>
     <td class="column-wide">
-
+      <a href="http://localhost:3800/team/2">
         <div class="books-promo">
           <p class="promo-title">{{=team.title}}</p>
           <p class="promo-description">{{=team.description}}</p>

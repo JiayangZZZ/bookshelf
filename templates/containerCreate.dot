@@ -1,0 +1,9 @@
+<div class="form-wrapper">
+  <div class="upload-pic"></div>
+  <div class="button-upload"><div>
+  <form>
+    Titile: <input type="title" name="title"><br />
+    Author: <input type="author" name="author"><br />
+
+  </form>
+</div>

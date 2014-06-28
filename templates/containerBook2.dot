@@ -1,0 +1,10 @@
+<div class="book-details">
+  <div class="book-cover"></div>
+  <div class="book-intro">
+    <p class="book-title">red and black</p>
+    <p class="tag">romance</p>
+    <p class="book-description">This is a good book telling us a wonderful story. It is really interesting.</p>
+  </div>
+  <a href=""><div class="button-blue">I've read it</div></a>
+  <a href=""><div class="button-red">I wanna read it</div></a>
+</div>

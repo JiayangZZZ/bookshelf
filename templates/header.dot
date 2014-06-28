@@ -6,5 +6,5 @@ header
 -->
 
 <div class="header-container">
-  <h1>BOOKSHELF</h1>
+  <a href="http://localhost:3800"><h1>BOOKSHELF</h1></a>
 </div>

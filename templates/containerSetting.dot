@@ -1,0 +1,22 @@
+
+<!--
+
+setting
+
+!-->
+
+<div class="setting-wrapper">
+
+{{~it.settings : setting : index}}
+<div class="first-column"><img src="/public/images/IMG_2590.JPG" height="220" width="220"></div>
+<div class="second-column">
+  <p class="setting-title">{{=setting.name}}<span class="button-edit">Edit</span></p>
+  <p class="setting-description">Age: {{=setting.age}}</p>
+  <p class="setting-description">Constellation: {{=setting.star}}</p>
+  <p class="setting-description">Hobby: {{=setting.hobit}}</p>
+  <p class="setting-description">{{=setting.introduction}}</p>
+</div>
+
+{{~}}
+
+</div>
